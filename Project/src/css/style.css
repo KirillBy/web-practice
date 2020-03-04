@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 h2 {
     color: red;
     font-size: 30;
@@ -17,4 +20,46 @@ h2 {
 .text{
     font-weight: 900;
     text-transform: uppercase;
+}
+
+.box{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    /* padding-top: 20px;
+    padding-left: 50px; */
+    padding: 20px 50px 40px 60px; /* top right bottom left */
+   /*  border-width: 3px;
+    border-style: solid;
+    border-color: black; */
+    border: 3px dashed black;
+    margin: 20px;
+}
+img{
+    display: block;
+    margin: 0 auto;
+width: 500px;
+
+}
+nav {
+   /*  position: relative;
+    bottom, top, left, right; */
+    /* position: absolute;
+    top: 0px;
+    bottom, top, left, right; */
+    position: inherit;
+    top: 50px;
+    right: 0px;
+}
+.example{
+    position: relative;
+    background-color: #aeaeae;
+    
+}
+.red{
+    background-color: red;
+    left: 30px;
+    position: absolute;
 }
