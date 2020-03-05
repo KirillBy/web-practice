@@ -70,7 +70,7 @@ color: #f9bf3b;
 font-family: "Roboto - Bold";
 font-weight: 700;
 }
-.promo .promo_btn{
+.promo .promo_btn, .present .present_btn{
 /* Style for "Rounded Re" */
 display: block;
 margin: 73px auto;
@@ -88,6 +88,9 @@ line-height: 24px;
 text-transform: uppercase;
 cursor: pointer;
 outline: none;
+}
+.present .present_btn{
+    margin: 52px auto;
 }
 .more .more_text{
     text-align: center;
@@ -229,4 +232,94 @@ font-family: Roboto;
 font-size: 17px;
 font-weight: 300;
 line-height: 20px;
+}
+.present{
+    min-height: 628px;
+background-color: #efefef;
+padding: 86px 0  87px 0;
+}
+.present .present_img{
+    display: block;
+    margin: 0 auto;
+}
+.present .present_text{
+    color: #252525;
+font-family: Roboto;
+font-size: 30px;
+font-weight: 400;
+text-align: center ;
+margin-top: 42px;
+line-height: 43px;
+}
+
+.webinar{
+    min-height: 515px ;
+    padding: 89px 0  64px 0;
+}
+.webinar .webinar_img{
+    display: block;
+    margin: 0 auto;
+}
+.webinar .webinar_header{
+    text-align: center;
+    margin-top: 37px;
+    color: #252525;
+font-family: Roboto;
+font-size: 30px;
+font-weight: 400;
+line-height: 12px;
+text-transform: uppercase;
+}
+.webinar .webinar_dateplace{
+    text-align: center;
+    margin-top: 30px;
+    color: #299cbd;
+font-family: "Roboto - Black";
+font-size: 36px;
+font-weight: 400;
+line-height: 12px;
+text-transform: uppercase;
+}
+.webinar .webinar_footer{
+    text-align: center;
+    margin-top: 25px; 
+    color: #4a4a4a;
+font-family: Roboto;
+font-size: 23px;
+font-weight: 400;
+line-height: 20px;
+}
+.footer{
+    min-height: 166px ;
+    padding: 61px 0  69px 0;
+    background-color: #1a1a1a;
+}
+.footer .footer_wrapper{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.footer .footer_link{
+    color: #888888;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+line-height: 21px;
+text-decoration: underline;
+}
+.footer .footer_separator{
+color: #888888;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+line-height: 21px;
+margin: 0 10px 0 10px;
+}
+.footer .footer_textcall{
+    text-align: center;
+    color: #888888;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+line-height: 21px;
 }
