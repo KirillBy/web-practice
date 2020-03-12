@@ -1,6 +1,10 @@
 $main-color: #1eacc7
 $second-color: #ff5656
 
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $second-color
 *
   font-family: 'Roboto', sans-serif
 
@@ -49,26 +53,26 @@ header .menu
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
 
-  .subheader_logo
+  &._logo
     display: block
     max-width: 100%
     margin-top: 16px
 
-  .subheader_official
+  &_official
     margin-top: 6px
     opacity: 0.5
     color: #ffffff
     font-size: 13px
     font-weight: 400
 
-  .subheader_call
+  &_call
     color: #ffffff
     margin-top: 19px
     font-size: 12px
     font-weight: 300
     text-align: right
 
-  .subheader_phone
+  &_phone
     margin-top: 8px
     color: #ffffff
     display: block
@@ -78,7 +82,7 @@ header .menu
     text-align: right
     line-height: 12px
 
-  .subheader_button
+  &_button
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     color: #ffffff
     font-size: 14px
@@ -91,13 +95,14 @@ header .menu
     border: none
     border-radius: 4px
     background-image: linear-gradient(to top, $main-color 0%, $main-color 100%)
+    +btn_hover
 
 .promo
   min-height: 800px
   padding: 150px 0 135px 0
   background: url('../img/firstpage/firstbackground.jpg') center (center / cover) no-repeat
 
-  .promo_header
+  &_header
     color: #ffffff
     font-size: 60px
     font-weight: 700
@@ -107,7 +112,7 @@ header .menu
     margin: 0
     text-align: center
 
-  .promo_subheader
+  &_subheader
     color: #ffffff
     font-size: 36px
     font-weight: 700
@@ -118,13 +123,13 @@ header .menu
     margin-top: 22px
     text-align: center
 
-  .promo_desc
+  &_desc
     margin-top: 23px
     color: #ffffff
     font-size: 18px
     font-weight: 400
 
-  .promo_btn
+  &_btn
     display: block
     margin: 118px auto 0 auto
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
@@ -139,6 +144,8 @@ header .menu
     border: none
     border-radius: 4px
     background-image: linear-gradient(to top, $main-color 0%, $main-color 100%)
+    +btn_hover
+    
 
 .reasons
   padding: 71px 0 65px 0
@@ -154,6 +161,7 @@ header .menu
   font-weight: 300
   text-transform: uppercase
   text-align: center
+  
 
 .title
   margin-bottom: 0
@@ -248,6 +256,28 @@ header .menu
             margin: 0 auto
             border-radius: 100%
             cursor: pointer
+            &:before
+              content: ''
+              display: block
+              width: 14px
+              height: 2px
+              background-color: $main-color
+            &::after
+              content: ''
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              display: block
+              height: 14px
+              width: 2px
+              background-color: $main-color
+              transition: 0.3s all
+            &:hover
+                &::before, &::after
+                  background-color: $second-color
+                  
+
+
 
 .choice 
 	position: relative
@@ -273,4 +303,46 @@ header .menu
 		width: 100%
 		background-color: #070716
 		z-index: 1
-            
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px  
+        background: url('../icons/fifthpage/blue.png') center (center / cover) no-repeat
+  &_descr
+    margin-top: 25px
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    color: #1ca8c3
+  .warning
+    .require_title
+      color: $second-color
+    .require_list
+      li
+        &:before
+          background: url('../icons/fifthpage/red.png') center (center / cover) no-repeat
+ 
