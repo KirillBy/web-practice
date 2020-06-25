@@ -13,6 +13,7 @@
           if(workrs[i].salary < 1000)
           {
              workrs.splice(i, 1);
+             i--;
           }
  
       }
