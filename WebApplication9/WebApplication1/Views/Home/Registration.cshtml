@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Registration</h2>
+@using (Html.BeginForm())
+{
+    @*@Html.TextBox("x") - создает элемент input type="text" с атрибутам в соответсвии с настройками*@
+    <label>login</label> @Html.TextBox("Логин")
+    <br />
+    <label>password</label> @Html.TextBox("Пароль")
+    <br />
+    <label>password_confirm</label> @Html.TextBox("Подтверждение пароля")
+    <br />
+    <label>email</label> @Html.TextBox("Email")
+    <br />
+
+
+    <input type="submit" name="registration" value="Зарегистрировать" />
+}

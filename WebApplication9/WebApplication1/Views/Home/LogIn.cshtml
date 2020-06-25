@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<h2>LogIn</h2>
+@using (Html.BeginForm())
+{
+    @*@Html.TextBox("x") - создает элемент input type="text" с атрибутам в соответсвии с настройками*@
+    <label>login</label> @Html.TextBox("Логин")
+    <br />
+    <label>password</label> @Html.TextBox("Пароль")
+    <br />
+
+
+
+    <input type="submit" name="enter" value="Вход" />
+}

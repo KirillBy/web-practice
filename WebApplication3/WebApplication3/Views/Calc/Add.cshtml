@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Result";
+}
+
+<h2>Add</h2>
+@ViewBag.Result
+<br>
+@Html.ActionLink("4 + 6 ", "Add", "Calc", new { x = 4, y = 6 }, null)
+<br>
+@Html.ActionLink("4 - 6 ", "Mul", "Calc", new { x = 4, y = 6 }, null)
+<br>
+@Html.ActionLink("4 * 6 ", "Sub", "Calc", new { x = 4, y = 6 }, null)
+<br>
+@Html.ActionLink("4 / 6 ", "Div", "Calc", new { x = 4, y = 6 }, null)

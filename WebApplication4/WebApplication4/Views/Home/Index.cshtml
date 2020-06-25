@@ -1,0 +1,17 @@
+﻿
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@Html.ActionLink("Main Page Link", "Index", "Home")
+<br />
+@Html.ActionLink("About Page Link", "About", "Home")
+<br />
+@Html.ActionLink("Contact Page Link", "Contact", "Home")
+<br />
+@Html.ActionLink("Admin Main Page", "Index", "Home", new { Area = "Admin" }, null)
+<br />
+@Html.ActionLink("Admin Product Main Page", "Index", "Product", new { Area = "Admin" }, null)
+<br />
+@Html.ActionLink("Admin Create Product Page", "Create", "Product", new { Area = "Admin" }, null)
+<br />
+@Html.ActionLink("Admin Delete Product Page", "Delete", "Product", new { Area = "Admin" }, null)

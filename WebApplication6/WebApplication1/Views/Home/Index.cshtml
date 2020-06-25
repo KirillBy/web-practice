@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebApplication1.Models.Product>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+    @Html.Partial("_PartialView", item)
+}
+
+<br>
+<table class="product-table" border="1">
+    <caption>Product table</caption>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>Price</th>
+        <th>Creation Date</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_SecondPartialView", item)
+    }
+    
+
+</table>
+
