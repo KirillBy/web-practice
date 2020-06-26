@@ -9,7 +9,6 @@
       console.log(workrs.length);
       for(var i = 0; i < workrs.length; i++)
       {
-        console.log(workrs[i].salary);
           if(workrs[i].salary < 1000)
           {
              workrs.splice(i, 1);

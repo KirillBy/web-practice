@@ -7,7 +7,6 @@
       function filterArray(mixedArray, isEven){
           for(var i = 0; i < mixedArray.length; i++)
           {
-              console.log(mixedArray[i]);
             if(!isEven(mixedArray[i]))
             {
                mixedArray.splice(i, 1);
